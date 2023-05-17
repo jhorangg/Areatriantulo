@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLIDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onunload="generar">
+ <center>
+   <h1>Area de triángulo</h1>
+ </center>
+ <hr>
+ <br>
+ 	<br>
+ <form>
+   <label>Base:</label>
+ <input type="range" onchange= "generar()" value ="0" min="0" max="100" id="b">
+ <label id="vb">0</label>
+ <br>
+    <label>Altura:</label>
+ <input type="range" onchange= "generar()" value ="0" min="0" max="100" id="a">
+ <label id="va">0</label>
+ 
+ <div id="res"></div>
+ <button onclick="borrar ()" id="borrar">BORRAR</button>
+   </form>
+   <script src="app.js"></script>
+</body>
+</html>
